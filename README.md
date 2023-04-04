@@ -1,6 +1,6 @@
 # POEI-Python-Rss
 
-#### The final goal of this project is to retrieve rss feeds and display the contained articles in a flask web application for a user who subscribed to it.
+#### The final goal of this project is to retrieve rss feeds and display the contained articles in a flask web application with a Swagger interface for a user who subscribed to it.
 
 03/04/2023 : <br>
 First iteration of the project. <br>
