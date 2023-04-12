@@ -13,20 +13,20 @@
 
 - 03/04/2023 :<br>
 First iteration of the project.
-Installation of the "Feedparser" lib and creation of a python script that retrieves some information from a rss feed link.<br><br>
+Installation of the "Feedparser" lib and creation of a python script that retrieves some information from a rss feed link.<br>
 
 - 07/04/2023 :<br>
 Add some information retrieved by the python script.
-Some problem using flask. Even if installed, the script seems not to find it and can't use it.<br><br>
+Some problem using flask. Even if installed, the script seems not to find it and can't use it.<br>
 
 - 11/04/2023 :<br>
 Problem with flask was related to the script file naming (don't name it "flask.py")
 Create a flask web application that display "hello world!" on http://127.0.0.1:5000/. <br>
-Follow flask tuto to create a web app that display some post (with titles, timstamp, link and content) from a local db initialized by a init_db python script
-Db is initialized with values retrieved from a RSS feed url.<br><br>
+Followed flask tuto to create a web app that display some post (with titles, timstamp, link and content) from a local db initialized by a init_db python script
+Db is initialized with values retrieved from an RSS feed url.<br>
 
 - 12/04/2023 :<br>
-  Project is migrated on Zenika github organization.<br>README.md file upgraded.<br>CONTRIBUTING.md file added<br><br>
+  Project is migrated on Zenika GitHub organization.<br>README.md file upgraded.<br>CONTRIBUTING.md file added<br>
 
 ## Usage
 
