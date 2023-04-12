@@ -12,6 +12,11 @@ MarkupSafe==2.1.2<br>
 sgmllib3k==1.0.0<br>
 Werkzeug==2.2.3<br>
 
+- [x]  Application shows RSS stream on the terminal
+- [x]  Application shows RSS stream in a web UI
+- [ ]  Application has one scrapper component and one reader component
+- [ ]  Application support multiple user profiles
+
 ### Evolution :
 
 03/04/2023 : <br>
