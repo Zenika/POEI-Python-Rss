@@ -32,7 +32,7 @@ Db is initialized with values retrieved from an RSS feed url.<br>
   init_db.py is now executed when flask run.<br>
 
 - 14/04/2023 :<br>
-  We can now have multiple rss feed in init_db.<br>
+  We can now have multiple rss feed in init_db.<br>Post content in html is now interpreted as html (not just a string).
 
 ## Usage
 
