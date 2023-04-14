@@ -3,9 +3,8 @@
 
 import feedparser
 
-# Url de flux RSS
+# Url de flux RSS à tester
 url = "https://valnuit.lepodcast.fr/rss"
-
 # Création d'une instance
 news_feed = feedparser.parse(url)
 
