@@ -1,9 +1,11 @@
 
 import sqlite3
+import init_db
 from flask import Flask, render_template, request, url_for, flash, redirect
 from werkzeug.exceptions import abort
 
 def get_db_connection():
+    init_db.test()
     conn = sqlite3.connect('database.db')
     conn.row_factory = sqlite3.Row
     return conn

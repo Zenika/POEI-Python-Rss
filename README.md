@@ -28,14 +28,13 @@ Db is initialized with values retrieved from an RSS feed url.<br>
 - 12/04/2023 :<br>
   Project is migrated on Zenika GitHub organization.<br>README.md file upgraded.<br>CONTRIBUTING.md file added<br>
 
+- 13/04/2023 :<br>
+  init_db.py is now executed when flask run.<br>
+
 ## Usage
 
 Make sure you have `python` and therefore `pip` installed.<br>
 
-Create and initialise the local database with:
-```sh
-./init_db
-```
 (You can edit this `init_db` file and replace the "url" variable value by the RSS feed url of your choice)
 
 Run the flask web application with:
