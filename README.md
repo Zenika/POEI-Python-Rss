@@ -31,6 +31,9 @@ Db is initialized with values retrieved from an RSS feed url.<br>
 - 13/04/2023 :<br>
   init_db.py is now executed when flask run.<br>
 
+- 14/04/2023 :<br>
+  We can now have multiple rss feed in init_db.<br>
+
 ## Usage
 
 Make sure you have `python` and therefore `pip` installed.<br>
