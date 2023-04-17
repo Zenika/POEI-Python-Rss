@@ -24,9 +24,10 @@ To run the project you need to have `python` and therefore `pip` already install
     
 2. Download all the python packages required.<br>You can do it from the requirements.txt file with `pip`:
     ```sh
-    pip install -r requirements.txt
+    pip install -r requirements.txt --use-pep517 --user
     ```
-   
+    The --use-pep517 is required by sgmllib (a dependency of feedparser) and the --user is required by flask<br><br>
+
 3. You are ready to Contribute to the project. <br>Folow `README.md` instructions on how to use it.
 
 > Tip: Keep your `master` branch pointing at the original repository and make pull requests from branches on your fork. To do this, run:
