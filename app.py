@@ -4,7 +4,12 @@ import init_db
 from flask import Flask, render_template, request, url_for, flash, redirect
 from werkzeug.exceptions import abort
 
-init_db.test()
+dbCreate = input("Create database.db from RssFeeds file ? (Y/N)")
+while (dbCreate != 'y') and (dbCreate != 'Y') and (dbCreate != 'n') and (dbCreate != 'N'):
+    dbCreate = input("Answer with Y (for yes) or N (for no)\nCreate database from RssFeeds file ? (Y/N)")
+
+if dbCreate == 'y' or dbCreate == 'Y':
+    init_db.init()
 
 def get_db_connection():
     conn = sqlite3.connect('database.db')
