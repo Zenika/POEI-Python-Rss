@@ -2,6 +2,7 @@
 :chapter: Development%20Environment
 include::_notify-bug-admonition.adoc[]
 
+Feel free to use any Python 3 version on any OS, for now on, we don't have any principles.
 **TODO**
 ////
 The development environment section allows you to summarise how people
