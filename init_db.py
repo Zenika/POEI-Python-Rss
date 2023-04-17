@@ -20,6 +20,7 @@ def init():
             print("Adding " + urlFeed, end='')
             news_feed = feedparser.parse(urlFeed)
 
+            print("Feed keys : ", news_feed.feed.keys())
             print("Items keys : ", news_feed.entries[0].keys())
 
             for entry in news_feed.entries:
