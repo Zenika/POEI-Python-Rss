@@ -1,0 +1,756 @@
+{
+  "id" : 1,
+  "name" : "aadarchi-documentation-system",
+  "description" : "Description",
+  "lastModifiedDate" : "2023-04-17T12:45:42Z",
+  "lastModifiedAgent" : "structurizr-javascript",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlICJhYWRhcmNoaS1kb2N1bWVudGF0aW9uLXN5c3RlbSIgewoJbW9kZWwgewoJCXBlcnNvbl91c2VyID0gcGVyc29uICJSU1MgQ29uc3VtZXIiICJBIHVzZXIgb2YgdGhpcyBzb2Z0d2FyZSBzeXN0ZW0uIgoJCWV4dGVybmFsX3dlYnNpdGUgPSBzb2Z0d2FyZVN5c3RlbSAiQW4gZXh0ZXJuYWwgd2Vic2l0ZSIgIkEgd2Vic2l0ZSBwcm9kdWNpbmcgYSBSU1MgZmVlZCIKCQlteVN5c3RlbSA9IHNvZnR3YXJlU3lzdGVtICJSU1MgUmVhZGVyIiAiT3VyIGdsb2JhbCByc3MgcmVhZGluZyBzeXN0ZW0iICJweXRob24sIGZsYXNrIiB7CgkJCWZlZWRHcmFiZXIgPSBjb250YWluZXIgIkZlZWQgZ3JhYmVyIiAiQ29udGFpbmVyIHJlc3BvbnNpYmxlIGZvciB1cGRhdGluZyB0aGUgZmVlZHMgZGF0YWJhc2UiICJweXRob24iIHsKCQkJCXRoaXMgLT4gZXh0ZXJuYWxfd2Vic2l0ZSAiR2V0IHdlYnNpdGUgbGF0ZXN0IGluZm9ybWF0aW9ucyIKCQkJCXBlcnNvbl91c2VyIC0+IHRoaXMgIlJ1biB0aGUgUHl0aG9uIHNjcmlwdCB0byBnZXQgc29tZSBuZXdzIgoJCQl9CgkJCXVzZXJCYWNrZW5kID0gY29udGFpbmVyICJGZWVkIHByZXNlbnRlciBiYWNrZW5kIiAiQ29udGFpbmVyIHJlc3BvbnNpYmxlIGZvciB1c2VyIHZpZXdlZCBkYXRhIiB7CgoJCQl9CgkJCXVzZXJGcm9udGVuZCA9IGNvbnRhaW5lciAiRmVlZCBwcmVzZW50ZSBmcm9udGVuZCIgIkNvbnRhaW5lciBwcmVzZW50aW5nIHVzZXIgZGF0YSBpbiB0aGUgYnJvd3NlciIgImh0bXgiICJicm93c2VyIiB7CgkJCQlwZXJzb25fdXNlciAtPiB0aGlzICJVc2VzIFVJIgoJCQkJdGhpcyAtPiB1c2VyQmFja2VuZCAiUHJvY2VzcyByZXF1ZXN0cyIKCQkJfQoJCQlkYXRhYmFzZSA9IGNvbnRhaW5lciAiRGF0YWJhc2UiICJkYXRhIHN0b3JhZ2UgZm9yIGFsbCBpbmZvcyIgIiIgImRhdGFiYXNlIiB7CgkJCQlmZWVkR3JhYmVyIC0+IHRoaXMgIlJlYWQgZmVlZHMgVVJMcyIKCQkJCWZlZWRHcmFiZXIgLT4gdGhpcyAiV3JpdGVzIGZlZWRzIGl0ZW1zIgoJCQkJdXNlckJhY2tlbmQgLT4gdGhpcyAiV3JpdGVzIHVzZXIgc3Vic2NyaXB0aW9ucyIKCQkJCXVzZXJCYWNrZW5kIC0+IHRoaXMgIlJlYWQgZmVlZHMgaXRlbXMiCgkJCQl1c2VyQmFja2VuZCAtPiB0aGlzICJNYXJrIGZlZWQgaXRlbSByZWFkIGZvciBvbmUgdXNlciIKCQkJfQoJCX0KCQlwaGFzZTEgPSBkZXBsb3ltZW50RW52aXJvbm1lbnQgIlBoYXNlIDEiIHsKCQkJZGVwbG95bWVudE5vZGUgIkRldmVsb3BlciBtYWNoaW5lIiAiQXMgYSBzdGFydCwgd2UgdXNlIHRoZSBkZXYgbWFjaGluZSIgIiIgIiIgIjEiIHsKCQkJCWNvbnRhaW5lckluc3RhbmNlIGZlZWRHcmFiZXIKCQkJfQoJCX0KCQlwaGFzZTIgPSBkZXBsb3ltZW50RW52aXJvbm1lbnQgIlBoYXNlIDIiIHsKCQkJZGVwbG95bWVudE5vZGUgIkRldmVsb3BlciBtYWNoaW5lIiAiQXMgYSBzdGFydCwgd2UgdXNlIHRoZSBkZXYgbWFjaGluZSIgIiIgIiIgIjEiIHsKCQkJCWNvbnRhaW5lckluc3RhbmNlIGZlZWRHcmFiZXIKCQkJCWNvbnRhaW5lckluc3RhbmNlIHVzZXJCYWNrZW5kCgkJCQljb250YWluZXJJbnN0YW5jZSBkYXRhYmFzZQoJCQl9CgkJfQoJCXBoYXNlMyA9IGRlcGxveW1lbnRFbnZpcm9ubWVudCAiUGhhc2UgMyIgewoJCQlkZXBsb3ltZW50Tm9kZSAiRGV2ZWxvcGVyIG1hY2hpbmUiICJBcyBhIHN0YXJ0LCB3ZSB1c2UgdGhlIGRldiBtYWNoaW5lIiAiIiAiIiAiMSIgewoJCQkJY29udGFpbmVySW5zdGFuY2UgdXNlckZyb250ZW5kCgkJCQljb250YWluZXJJbnN0YW5jZSB1c2VyQmFja2VuZAoJCQl9CgkJCWRlcGxveW1lbnROb2RlICJDZW50cmFsIGZlZWQgZ3JhYmVyIiAiQSBmZWVkIGdyYWJlciBzZXJ2ZXIiICJEb2NrZXIiIHsKCQkJCWNvbnRhaW5lckluc3RhbmNlIGZlZWRHcmFiZXIKCQkJfQoJCQlkZXBsb3ltZW50Tm9kZSAiRGF0YWJhc2UgaG9zdCIgewoJCQkJY29udGFpbmVySW5zdGFuY2UgZGF0YWJhc2UKCQkJfQoJCX0KCQlwaGFzZTQgPSBkZXBsb3ltZW50RW52aXJvbm1lbnQgIlBoYXNlIDQiIHsKCQkJZGVwbG95bWVudE5vZGUgIkRvY2tlciBjb21wb3NlIiB7CgkJCQljb250YWluZXJJbnN0YW5jZSB1c2VyRnJvbnRlbmQKCQkJCWNvbnRhaW5lckluc3RhbmNlIHVzZXJCYWNrZW5kCgkJCQljb250YWluZXJJbnN0YW5jZSBmZWVkR3JhYmVyCgkJCX0KCQkJZGVwbG95bWVudE5vZGUgIkRhdGFiYXNlIHNlcnZlciIgewoJCQkJY29udGFpbmVySW5zdGFuY2UgZGF0YWJhc2UKCQkJfQoJCX0KCX0KCXZpZXdzIHsKCQlzeXN0ZW1Db250ZXh0ICJteVN5c3RlbSIgIlN5c3RlbUNvbnRleHQiICJJbGx1c3RyYXRpb24gb2YgbXlTeXN0ZW0gdXNhZ2UiIHsKCQkJaW5jbHVkZSAqCgkJCWF1dG9MYXlvdXQKCQl9CgkJY29udGFpbmVyICJteVN5c3RlbSIgInN5c3RlbV9jb250YWluZXJzIiAibXlTeXN0ZW0gY29udGFpbmVycyIgewoJCQlpbmNsdWRlICoKCQkJYXV0b0xheW91dAoJCX0KCQlkZXBsb3ltZW50ICogcGhhc2UxIHBoYXNlMV9kZXBsb3ltZW50IHsKCQkJaW5jbHVkZSAqCgkJCWF1dG9MYXlvdXQKCQl9CgkJZGVwbG95bWVudCAqIHBoYXNlMiBwaGFzZTJfZGVwbG95bWVudCB7CgkJCWluY2x1ZGUgKgoJCQlhdXRvTGF5b3V0CgkJfQoJCWRlcGxveW1lbnQgKiBwaGFzZTMgcGhhc2UzX2RlcGxveW1lbnQgewoJCQlpbmNsdWRlICoKCQkJYXV0b0xheW91dAoJCX0KCQlkZXBsb3ltZW50ICogcGhhc2U0IHBoYXNlNF9kZXBsb3ltZW50IHsKCQkJaW5jbHVkZSAqCgkJCWF1dG9MYXlvdXQKCQl9CgogICAgICAgIHRoZW1lIGRlZmF1bHQKICAgICAgICBzdHlsZXMgewogICAgICAgICAgICBlbGVtZW50ICJtb2JpbGUiIHsKICAgICAgICAgICAgICAgIHNoYXBlIE1vYmlsZURldmljZVBvcnRyYWl0CiAgICAgICAgICAgIH0KCQkJZWxlbWVudCAiYnJvd3NlciIgewoJCQkJc2hhcGUgV2ViQnJvd3NlcgoJCQl9CiAgICAgICAgICAgIGVsZW1lbnQgInJvYm90IiB7CiAgICAgICAgICAgICAgICBzaGFwZSBSb2JvdAogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgImRhdGFiYXNlIiB7CiAgICAgICAgICAgICAgICBzaGFwZSBDeWxpbmRlcgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIm1lc3NhZ2luZyIgewogICAgICAgICAgICAgICAgc2hhcGUgInBpcGUiCiAgICAgICAgICAgIH0KICAgICAgICB9Cgl9Cgp9Cg=="
+  },
+  "configuration" : { },
+  "model" : {
+    "people" : [ {
+      "id" : "1",
+      "tags" : "Element,Person",
+      "properties" : {
+        "structurizr.dsl.identifier" : "person_user"
+      },
+      "name" : "RSS Consumer",
+      "description" : "A user of this software system.",
+      "relationships" : [ {
+        "id" : "8",
+        "sourceId" : "1",
+        "destinationId" : "3",
+        "description" : "Run the Python script to get some news",
+        "linkedRelationshipId" : "7"
+      }, {
+        "id" : "7",
+        "tags" : "Relationship",
+        "sourceId" : "1",
+        "destinationId" : "4",
+        "description" : "Run the Python script to get some news"
+      }, {
+        "id" : "11",
+        "tags" : "Relationship",
+        "sourceId" : "1",
+        "destinationId" : "10",
+        "description" : "Uses UI"
+      } ],
+      "location" : "Unspecified"
+    } ],
+    "softwareSystems" : [ {
+      "id" : "2",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "external_website"
+      },
+      "name" : "An external website",
+      "description" : "A website producing a RSS feed",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "3",
+      "tags" : "Element,Software System,python,flask",
+      "properties" : {
+        "structurizr.dsl.identifier" : "mysystem"
+      },
+      "name" : "RSS Reader",
+      "description" : "Our global rss reading system",
+      "relationships" : [ {
+        "id" : "6",
+        "sourceId" : "3",
+        "destinationId" : "2",
+        "description" : "Get website latest informations",
+        "linkedRelationshipId" : "5"
+      } ],
+      "location" : "Unspecified",
+      "containers" : [ {
+        "id" : "13",
+        "tags" : "Element,Container,database",
+        "properties" : {
+          "structurizr.dsl.identifier" : "database"
+        },
+        "name" : "Database",
+        "description" : "data storage for all infos",
+        "documentation" : { }
+      }, {
+        "id" : "9",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "userbackend"
+        },
+        "name" : "Feed presenter backend",
+        "description" : "Container responsible for user viewed data",
+        "relationships" : [ {
+          "id" : "18",
+          "tags" : "Relationship",
+          "sourceId" : "9",
+          "destinationId" : "13",
+          "description" : "Mark feed item read for one user"
+        }, {
+          "id" : "16",
+          "tags" : "Relationship",
+          "sourceId" : "9",
+          "destinationId" : "13",
+          "description" : "Writes user subscriptions"
+        }, {
+          "id" : "17",
+          "tags" : "Relationship",
+          "sourceId" : "9",
+          "destinationId" : "13",
+          "description" : "Read feeds items"
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "4",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "feedgraber"
+        },
+        "name" : "Feed graber",
+        "description" : "Container responsible for updating the feeds database",
+        "relationships" : [ {
+          "id" : "14",
+          "tags" : "Relationship",
+          "sourceId" : "4",
+          "destinationId" : "13",
+          "description" : "Read feeds URLs"
+        }, {
+          "id" : "15",
+          "tags" : "Relationship",
+          "sourceId" : "4",
+          "destinationId" : "13",
+          "description" : "Writes feeds items"
+        }, {
+          "id" : "5",
+          "tags" : "Relationship",
+          "sourceId" : "4",
+          "destinationId" : "2",
+          "description" : "Get website latest informations"
+        } ],
+        "technology" : "python",
+        "documentation" : { }
+      }, {
+        "id" : "10",
+        "tags" : "Element,Container,browser",
+        "properties" : {
+          "structurizr.dsl.identifier" : "userfrontend"
+        },
+        "name" : "Feed presente frontend",
+        "description" : "Container presenting user data in the browser",
+        "relationships" : [ {
+          "id" : "12",
+          "tags" : "Relationship",
+          "sourceId" : "10",
+          "destinationId" : "9",
+          "description" : "Process requests"
+        } ],
+        "technology" : "htmx",
+        "documentation" : { }
+      } ],
+      "documentation" : { }
+    } ],
+    "deploymentNodes" : [ {
+      "id" : "48",
+      "tags" : "Element,Deployment Node",
+      "name" : "Database server",
+      "environment" : "Phase 4",
+      "instances" : "1",
+      "containerInstances" : [ {
+        "id" : "49",
+        "tags" : "Container Instance",
+        "environment" : "Phase 4",
+        "deploymentGroups" : [ "Default" ],
+        "instanceId" : 1,
+        "containerId" : "13"
+      } ]
+    }, {
+      "id" : "34",
+      "tags" : "Element,Deployment Node",
+      "name" : "Central feed graber",
+      "description" : "A feed graber server",
+      "environment" : "Phase 3",
+      "technology" : "Docker",
+      "instances" : "1",
+      "containerInstances" : [ {
+        "id" : "35",
+        "tags" : "Container Instance",
+        "relationships" : [ {
+          "id" : "38",
+          "sourceId" : "35",
+          "destinationId" : "37",
+          "description" : "Read feeds URLs",
+          "linkedRelationshipId" : "14"
+        }, {
+          "id" : "39",
+          "sourceId" : "35",
+          "destinationId" : "37",
+          "description" : "Writes feeds items",
+          "linkedRelationshipId" : "15"
+        } ],
+        "environment" : "Phase 3",
+        "deploymentGroups" : [ "Default" ],
+        "instanceId" : 1,
+        "containerId" : "4"
+      } ]
+    }, {
+      "id" : "30",
+      "tags" : "Element,Deployment Node",
+      "name" : "Developer machine",
+      "description" : "As a start, we use the dev machine",
+      "environment" : "Phase 3",
+      "instances" : "1",
+      "containerInstances" : [ {
+        "id" : "32",
+        "tags" : "Container Instance",
+        "relationships" : [ {
+          "id" : "42",
+          "sourceId" : "32",
+          "destinationId" : "37",
+          "description" : "Mark feed item read for one user",
+          "linkedRelationshipId" : "18"
+        }, {
+          "id" : "41",
+          "sourceId" : "32",
+          "destinationId" : "37",
+          "description" : "Read feeds items",
+          "linkedRelationshipId" : "17"
+        }, {
+          "id" : "40",
+          "sourceId" : "32",
+          "destinationId" : "37",
+          "description" : "Writes user subscriptions",
+          "linkedRelationshipId" : "16"
+        } ],
+        "environment" : "Phase 3",
+        "deploymentGroups" : [ "Default" ],
+        "instanceId" : 1,
+        "containerId" : "9"
+      }, {
+        "id" : "31",
+        "tags" : "Container Instance",
+        "relationships" : [ {
+          "id" : "33",
+          "sourceId" : "31",
+          "destinationId" : "32",
+          "description" : "Process requests",
+          "linkedRelationshipId" : "12"
+        } ],
+        "environment" : "Phase 3",
+        "deploymentGroups" : [ "Default" ],
+        "instanceId" : 1,
+        "containerId" : "10"
+      } ]
+    }, {
+      "id" : "43",
+      "tags" : "Element,Deployment Node",
+      "name" : "Docker compose",
+      "environment" : "Phase 4",
+      "instances" : "1",
+      "containerInstances" : [ {
+        "id" : "47",
+        "tags" : "Container Instance",
+        "relationships" : [ {
+          "id" : "54",
+          "sourceId" : "47",
+          "destinationId" : "49",
+          "description" : "Writes feeds items",
+          "linkedRelationshipId" : "15"
+        }, {
+          "id" : "53",
+          "sourceId" : "47",
+          "destinationId" : "49",
+          "description" : "Read feeds URLs",
+          "linkedRelationshipId" : "14"
+        } ],
+        "environment" : "Phase 4",
+        "deploymentGroups" : [ "Default" ],
+        "instanceId" : 1,
+        "containerId" : "4"
+      }, {
+        "id" : "44",
+        "tags" : "Container Instance",
+        "relationships" : [ {
+          "id" : "46",
+          "sourceId" : "44",
+          "destinationId" : "45",
+          "description" : "Process requests",
+          "linkedRelationshipId" : "12"
+        } ],
+        "environment" : "Phase 4",
+        "deploymentGroups" : [ "Default" ],
+        "instanceId" : 1,
+        "containerId" : "10"
+      }, {
+        "id" : "45",
+        "tags" : "Container Instance",
+        "relationships" : [ {
+          "id" : "52",
+          "sourceId" : "45",
+          "destinationId" : "49",
+          "description" : "Mark feed item read for one user",
+          "linkedRelationshipId" : "18"
+        }, {
+          "id" : "50",
+          "sourceId" : "45",
+          "destinationId" : "49",
+          "description" : "Writes user subscriptions",
+          "linkedRelationshipId" : "16"
+        }, {
+          "id" : "51",
+          "sourceId" : "45",
+          "destinationId" : "49",
+          "description" : "Read feeds items",
+          "linkedRelationshipId" : "17"
+        } ],
+        "environment" : "Phase 4",
+        "deploymentGroups" : [ "Default" ],
+        "instanceId" : 1,
+        "containerId" : "9"
+      } ]
+    }, {
+      "id" : "19",
+      "tags" : "Element,Deployment Node",
+      "name" : "Developer machine",
+      "description" : "As a start, we use the dev machine",
+      "environment" : "Phase 1",
+      "instances" : "1",
+      "containerInstances" : [ {
+        "id" : "20",
+        "tags" : "Container Instance",
+        "environment" : "Phase 1",
+        "deploymentGroups" : [ "Default" ],
+        "instanceId" : 1,
+        "containerId" : "4"
+      } ]
+    }, {
+      "id" : "21",
+      "tags" : "Element,Deployment Node",
+      "name" : "Developer machine",
+      "description" : "As a start, we use the dev machine",
+      "environment" : "Phase 2",
+      "instances" : "1",
+      "containerInstances" : [ {
+        "id" : "24",
+        "tags" : "Container Instance",
+        "environment" : "Phase 2",
+        "deploymentGroups" : [ "Default" ],
+        "instanceId" : 1,
+        "containerId" : "13"
+      }, {
+        "id" : "22",
+        "tags" : "Container Instance",
+        "relationships" : [ {
+          "id" : "25",
+          "sourceId" : "22",
+          "destinationId" : "24",
+          "description" : "Read feeds URLs",
+          "linkedRelationshipId" : "14"
+        }, {
+          "id" : "26",
+          "sourceId" : "22",
+          "destinationId" : "24",
+          "description" : "Writes feeds items",
+          "linkedRelationshipId" : "15"
+        } ],
+        "environment" : "Phase 2",
+        "deploymentGroups" : [ "Default" ],
+        "instanceId" : 1,
+        "containerId" : "4"
+      }, {
+        "id" : "23",
+        "tags" : "Container Instance",
+        "relationships" : [ {
+          "id" : "29",
+          "sourceId" : "23",
+          "destinationId" : "24",
+          "description" : "Mark feed item read for one user",
+          "linkedRelationshipId" : "18"
+        }, {
+          "id" : "28",
+          "sourceId" : "23",
+          "destinationId" : "24",
+          "description" : "Read feeds items",
+          "linkedRelationshipId" : "17"
+        }, {
+          "id" : "27",
+          "sourceId" : "23",
+          "destinationId" : "24",
+          "description" : "Writes user subscriptions",
+          "linkedRelationshipId" : "16"
+        } ],
+        "environment" : "Phase 2",
+        "deploymentGroups" : [ "Default" ],
+        "instanceId" : 1,
+        "containerId" : "9"
+      } ]
+    }, {
+      "id" : "36",
+      "tags" : "Element,Deployment Node",
+      "name" : "Database host",
+      "environment" : "Phase 3",
+      "instances" : "1",
+      "containerInstances" : [ {
+        "id" : "37",
+        "tags" : "Container Instance",
+        "environment" : "Phase 3",
+        "deploymentGroups" : [ "Default" ],
+        "instanceId" : 1,
+        "containerId" : "13"
+      } ]
+    } ]
+  },
+  "documentation" : { },
+  "views" : {
+    "systemContextViews" : [ {
+      "key" : "SystemContext",
+      "order" : 1,
+      "description" : "Illustration of mySystem usage",
+      "softwareSystemId" : "3",
+      "paperSize" : "A5_Portrait",
+      "dimensions" : {
+        "width" : 866,
+        "height" : 2016
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "enterpriseBoundaryVisible" : true,
+      "elements" : [ {
+        "id" : "1",
+        "x" : 233,
+        "y" : 208
+      }, {
+        "id" : "2",
+        "x" : 208,
+        "y" : 1508
+      }, {
+        "id" : "3",
+        "x" : 208,
+        "y" : 908
+      } ],
+      "relationships" : [ {
+        "id" : "6"
+      }, {
+        "id" : "8"
+      } ]
+    } ],
+    "containerViews" : [ {
+      "key" : "system_containers",
+      "order" : 2,
+      "description" : "mySystem containers",
+      "softwareSystemId" : "3",
+      "paperSize" : "A4_Portrait",
+      "dimensions" : {
+        "width" : 2412,
+        "height" : 2720
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "externalSoftwareSystemBoundariesVisible" : true,
+      "elements" : [ {
+        "id" : "1",
+        "x" : 733,
+        "y" : 208
+      }, {
+        "id" : "2",
+        "x" : 1737,
+        "y" : 2108
+      }, {
+        "id" : "13",
+        "x" : 329,
+        "y" : 2108
+      }, {
+        "id" : "4",
+        "x" : 1079,
+        "y" : 1508
+      }, {
+        "id" : "9",
+        "x" : 329,
+        "y" : 1508
+      }, {
+        "id" : "10",
+        "x" : 362,
+        "y" : 908
+      } ],
+      "relationships" : [ {
+        "id" : "18"
+      }, {
+        "id" : "17"
+      }, {
+        "id" : "16"
+      }, {
+        "id" : "15"
+      }, {
+        "id" : "14"
+      }, {
+        "id" : "5"
+      }, {
+        "id" : "11"
+      }, {
+        "id" : "12"
+      }, {
+        "id" : "7"
+      } ]
+    } ],
+    "deploymentViews" : [ {
+      "key" : "phase3_deployment",
+      "order" : 5,
+      "paperSize" : "A4_Portrait",
+      "dimensions" : {
+        "width" : 1858,
+        "height" : 2158
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "environment" : "Phase 3",
+      "elements" : [ {
+        "id" : "34",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "35",
+        "x" : 1079,
+        "y" : 929
+      }, {
+        "id" : "36",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "37",
+        "x" : 329,
+        "y" : 1529
+      }, {
+        "id" : "30",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "31",
+        "x" : 329,
+        "y" : 329
+      }, {
+        "id" : "32",
+        "x" : 329,
+        "y" : 929
+      } ],
+      "relationships" : [ {
+        "id" : "40"
+      }, {
+        "id" : "41"
+      }, {
+        "id" : "42"
+      }, {
+        "id" : "33"
+      }, {
+        "id" : "38"
+      }, {
+        "id" : "39"
+      } ]
+    }, {
+      "key" : "phase2_deployment",
+      "order" : 4,
+      "dimensions" : {
+        "width" : 1640,
+        "height" : 1411
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "environment" : "Phase 2",
+      "elements" : [ {
+        "id" : "22",
+        "x" : 969,
+        "y" : 219
+      }, {
+        "id" : "23",
+        "x" : 219,
+        "y" : 219
+      }, {
+        "id" : "24",
+        "x" : 219,
+        "y" : 819
+      }, {
+        "id" : "21",
+        "x" : 175,
+        "y" : 175
+      } ],
+      "relationships" : [ {
+        "id" : "29",
+        "vertices" : [ {
+          "x" : 444,
+          "y" : 669
+        } ]
+      }, {
+        "id" : "28",
+        "vertices" : [ {
+          "x" : 594,
+          "y" : 669
+        } ]
+      }, {
+        "id" : "27",
+        "vertices" : [ {
+          "x" : 294,
+          "y" : 669
+        } ]
+      }, {
+        "id" : "26",
+        "vertices" : [ {
+          "x" : 725,
+          "y" : 551
+        } ]
+      }, {
+        "id" : "25",
+        "vertices" : [ {
+          "x" : 912,
+          "y" : 786
+        } ]
+      } ]
+    }, {
+      "key" : "phase4_deployment",
+      "order" : 6,
+      "dimensions" : {
+        "width" : 1640,
+        "height" : 2011
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "environment" : "Phase 4",
+      "elements" : [ {
+        "id" : "44",
+        "x" : 220,
+        "y" : 219
+      }, {
+        "id" : "45",
+        "x" : 220,
+        "y" : 819
+      }, {
+        "id" : "47",
+        "x" : 970,
+        "y" : 219
+      }, {
+        "id" : "48",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "49",
+        "x" : 220,
+        "y" : 1419
+      }, {
+        "id" : "43",
+        "x" : 175,
+        "y" : 175
+      } ],
+      "relationships" : [ {
+        "id" : "50",
+        "vertices" : [ {
+          "x" : 445,
+          "y" : 1269
+        } ]
+      }, {
+        "id" : "51",
+        "vertices" : [ {
+          "x" : 595,
+          "y" : 1269
+        } ]
+      }, {
+        "id" : "52",
+        "vertices" : [ {
+          "x" : 295,
+          "y" : 1269
+        } ]
+      }, {
+        "id" : "53",
+        "vertices" : [ {
+          "x" : 670,
+          "y" : 1223
+        } ]
+      }, {
+        "id" : "54",
+        "vertices" : [ {
+          "x" : 970,
+          "y" : 1223
+        } ]
+      }, {
+        "id" : "46"
+      } ]
+    }, {
+      "key" : "phase1_deployment",
+      "order" : 3,
+      "dimensions" : {
+        "width" : 890,
+        "height" : 811
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "environment" : "Phase 1",
+      "elements" : [ {
+        "id" : "19",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "20",
+        "x" : 219,
+        "y" : 219
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "styles" : {
+        "elements" : [ {
+          "tag" : "mobile",
+          "shape" : "MobileDevicePortrait"
+        }, {
+          "tag" : "browser",
+          "shape" : "WebBrowser"
+        }, {
+          "tag" : "robot",
+          "shape" : "Robot"
+        }, {
+          "tag" : "database",
+          "shape" : "Cylinder"
+        }, {
+          "tag" : "messaging",
+          "shape" : "Pipe"
+        } ]
+      },
+      "themes" : [ "https://static.structurizr.com/themes/default/theme.json" ],
+      "terminology" : { },
+      "metadataSymbols" : "SquareBrackets",
+      "lastSavedView" : "phase2_deployment"
+    }
+  }
+}

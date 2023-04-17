@@ -1,0 +1,161 @@
+= Functional Overview
+:chapter: Functional%20Overview
+include::_notify-bug-admonition.adoc[]
+
+As we don't have any external specification document, this page will be used as user stories catalog
+
+== As an RSS Consumer
+
+=== I want to be able to manage my feed list easily
+==== v0 - Add/remove feeds
+The list of feeds I'm subscribed to will be shown in a table (with the classical remove button for each feed).
+An additionnal button will be shown in the header allowing me to add one supplementary feed.
+
+[plantuml, {plantumldir}use_case_manage_feeds_v0, svg, opts="inline"]     
+----
+@startsalt
+{
+    {T#
+    **Feed name**  | **Website URL**             | **Feed URL**                         | **Latest feed update** |Manage ➕
+    LinuxFr        | https://linuxfr.org         | https://linuxfr.org/news.atom        | 30 minutes ago         | ➖
+    Developpez     | https://www.developpez.com  | https://www.developpez.com/index/rss | 60 minutes ago         | ➖
+    }
+}
+@endsalt
+----
+
+==== v1 - Set feed categories
+For each feed, I want to edit the open list of categories I want this feed to be seen into.
+
+[plantuml, {plantumldir}use_case_manage_feeds_v1, svg, opts="inline"]     
+----
+@startsalt
+{
+    {T#
+    **Feed name**  | **Categories** | **Website URL**             | **Feed URL**                         | **Latest feed update** |Manage ➕
+    LinuxFr        | Linux          | https://linuxfr.org         | https://linuxfr.org/news.atom        | 30 minutes ago         | ➖
+    Developpez     | Développement  | https://www.developpez.com  | https://www.developpez.com/index/rss | 60 minutes ago         | ➖
+    }
+}
+@endsalt
+----
+
+=== I want to see feed updates
+==== v0 - Sorted by date only
+
+[plantuml, {plantumldir}use_read_feeds_v0, svg, opts="inline"]     
+----
+@startsalt
+{
+    {T
+    +All feeds
+    ++ LinuxFr
+    ++ Developpez
+    }
+    {T-
+        {
+            **Linux From Scratch 11.3 : on vous tient par la main** //11/03/23 à 21:25//
+        }
+        {
+Comme chaque début d’année, c’est la période pour une nouvelle version de Linux From Scratch.
+
+Linux From Scratch, ou LFS pour les intimes, est un livre décrivant pas à pas la construction à la main d’une distribution GNU/Linux, l’occasion idéale pour en apprendre plus sur GNU/Linux et créer la vôtre ! Tout cela 100 % traduit en français, lisible en ligne ou téléchargeable aux formats HTML, PDF ou epub.
+
+Logo de LFS
+
+La nouvelle version 11.3 est désormais disponible, avec du SysV et du Systemd dedans pour ne pas faire de jaloux. Elle est considérée comme une version majeure. Beyond LFS (Une sorte de second volume qui étend une LFS déjà installée pour en faire une version plus personnalisée et utilisable) est lui aussi disponible en version 11.3.
+        }
+        {
+       **Un voleur de camion abattu par le propriétaire après que l'AirTag d'Apple ait révélé sa position. Pensez-vous que l'utilisation des Airtag est plutôt utile ou au contraire dangereuse ?** //03/04/2023 16:54:00//
+        }
+        {
+AirTag : quel est le bilan de l'utilisation du traceur Bluetooth d'Apple ?
+Un voleur de camion repéré par son propriétaire grâce à cette balise. Le propriétaire décide de se faire justice
+
+Un vol de camion au Texas s'est terminé par des coups de feu après que le voleur présumé a été retrouvé par l'AirTag du propriétaire du véhicule. La police de San Antonio a reçu un rapport de véhicule volé vers 13 heures d'une maison de Braesview. Cependant, avant que la police ne puisse récupérer le camion...
+        }
+
+
+    }
+}
+@endsalt
+----
+
+
+==== v1 - Added support for categories
+
+The categories should be presented below "All feeds"
+
+=== user parameters
+
+==== v0 - No authentication
+
+In v0 state, authentication is not handled (application is single user)
+
+==== v1 - Authentication through OpenID Connect
+
+In v1, user can authentication with its openid identity (Google and others)
+
+////
+Even though the purpose of technical software documentation isn't to
+explain what the software does in detail, it can be useful to expand on
+the link:/help/documentation/context[context] and summarise what the
+major functions of the software are.
+
+== Intent
+
+This section allows you to summarise what the key functions of the
+system are (use cases, user stories, etc). A functional overview should
+answer the following types of questions:
+
+* Is it clear what the system actually does?
+* Is it clear who the important users are (roles, actors, personas, etc)
+and how the system caters for their needs?
+
+Alternatively, if your software automates a business process or
+workflow, a functional view should answer questions like the following:
+
+* Is it clear what the system does from a process perspective?
+* What are the major processes and flows of information through the
+system?
+
+== Structure
+
+By all means refer to existing documentation if it's available, whether
+that's in the form of functional specifications, use case documents,
+lists of user stories, etc. However, it's often useful to summarise the
+business domain and the functionality provided by the system. Again,
+diagrams can help, and you could use a UML use case diagram or a
+collection of simple wireframes showing the important parts of the user
+interface. Either way, the purpose of this section is to provide a
+functional _overview_.
+
+Alternatively, if your software automates a business process or
+workflow, you could use a flow chart or UML activity diagram to show the
+smaller steps within the process and how they fit together. This is
+particularly useful to highlight aspects such as parallelism,
+concurrency, where businesses processes fork or join, etc.
+
+== Motivation
+
+This doesn't necessarily need to be a long section, with diagrams being
+used to provide an overview. Where a
+link:/help/documentation/context[context section] summarises how the
+software fits into the existing environment, this section describes what
+the system actually does. Again, this is about providing a summary and
+setting the scene rather than comprehensively describing every
+user/system interaction.
+
+== Audience
+
+Technical and non-technical people, inside and outside of the immediate
+software development team.
+
+== Required
+
+Yes, all software documentation should include a summary of the
+functionality provided by the software.
+////
+
+// This include allows enhancers to have their content include "automagically". Don't remove it!
+include::{enhancements-dir}/_02-functional_overview.adoc[leveloffset=+1]
