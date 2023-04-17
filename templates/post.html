@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <a href="{{ url_for('index')}}"><- Go back</a>
+  <a href="{{ url_for('posts', post_feed=post['feed']) }}"><- Go back</a>
   <h2>{% block title %} {{ post['title'] }} {% endblock %}</h2>
   <span>{{ post['date'] }}</span>
   <a href="{{ post['link'] }}">{{ post['link'] }}</a>
