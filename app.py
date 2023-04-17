@@ -1,15 +1,27 @@
-
+import os
 import sqlite3
 import init_db
 from flask import Flask, render_template, request, url_for, flash, redirect
 from werkzeug.exceptions import abort
 
-dbCreate = input("Create database.db from RssFeeds file ? (Y/N)")
-while (dbCreate != 'y') and (dbCreate != 'Y') and (dbCreate != 'n') and (dbCreate != 'N'):
-    dbCreate = input("Answer with Y (for yes) or N (for no)\nCreate database from RssFeeds file ? (Y/N)")
-
-if dbCreate == 'y' or dbCreate == 'Y':
-    init_db.init()
+if os.path.isfile('/database.db'):
+    dbCreate = input("You already got a database.db file\n"
+                     "Do you want to create a new database.db from actual RssFeeds file ? (Y/N)")
+    while (dbCreate != 'y') and (dbCreate != 'Y') and (dbCreate != 'n') and (dbCreate != 'N'):
+        dbCreate = input("Answer with Y (for yes) or N (for no)\n"
+                         "Create database from RssFeeds file ? (Y/N)")
+    if dbCreate == 'y' or dbCreate == 'Y':
+        init_db.init()
+else:
+    print("You have no database.db file\nOne will be generated from url in the RssFeeds file, it can take a few minutes")
+    go = input("Continue ? (Y/N)")
+    while (go != 'y') and (go != 'Y') and (go != 'n') and (go != 'N'):
+        go = input("Answer with Y (for yes) or N (for no)\n"
+                         "Continue ? (Y/N)")
+    if go == 'y' or go == 'Y':
+        init_db.init()
+    else:
+        quit()
 
 def get_db_connection():
     conn = sqlite3.connect('database.db')
