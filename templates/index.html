@@ -5,7 +5,7 @@
 
     {% for feed in feeds %}
         <a href="{{ url_for('posts', post_feed=feed['feed']) }}">
-            <h2>{{ feed['feed'] }}</h2>
+            <h2>{{ feed['feed']|safe }}</h2>
         </a>
         <hr>
     {% endfor %}
