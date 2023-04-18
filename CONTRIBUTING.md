@@ -46,5 +46,5 @@ To run the project you need to have `python` and therefore `pip` already install
 
 Please go through existing issues and pull requests to check if somebody else is already working on it.
 
-Also, make sure to run and tests the code before you commit your changes.<br>
-(joke on me, the project doesn't have any tests for the moment)
+Also, make sure to run and test the code before you commit your changes.<br>
+(joke on me, the project doesn't have any test for the moment)
