@@ -32,18 +32,27 @@ Db is initialized with values retrieved from an RSS feed url.<br>
   init_db.py is now executed when flask run.<br>
 
 - 14/04/2023 :<br>
-  We can now have multiple rss feed in init_db.<br>Post content in html is now interpreted as html (not just a string).
+  We can now have multiple rss feed in init_db.<br>Post content in html is now interpreted as html (not just a string).<br>
+
+- 17/04/2023 :<br>
+  Rss feed URLs are now read from a `RssFeeds` file.<br>Flask run will ask user if they want to generate the database.db.<br>Add a new page `feed`.
 
 ## Usage
 
 Make sure you have `python` and therefore `pip` installed.<br>
 
-(You can edit this `init_db` file and replace the "url" variable value by the RSS feed url of your choice)
-
 Run the flask web application with:
 ```sh
 flask run
 ```
+
+We need a database.db file.<br>One is already in the project file to avoid you to generate it yourself, but you can edit the `Rssfeeds` file to add, replace or delete some Rss feed url and the app will then ask if you want to generate a new database.db file from the actual  `RssFeeds` file.
+
+```sh
+Do you want to create a new database.db from actual RssFeeds file ? (Y/N)
+```
+
+The generation can take a few minutes.
 
 Then go on your favorite internet Browser to the url :<br>
 http://127.0.0.1:5000/
