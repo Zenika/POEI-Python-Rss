@@ -33,7 +33,15 @@ def get_db_connection():
 
 def get_feeds():
     conn = get_db_connection()
-    feeds = conn.execute('SELECT * FROM posts group by feed').fetchall()
+    feeds = conn.execute('SELECT * FROM posts where feed is not null group by feed order by lower(feed) asc').fetchall()
+    conn.close()
+    if feeds is None:
+        abort(404)
+    return feeds
+
+def get_posts():
+    conn = get_db_connection()
+    feeds = conn.execute('SELECT * FROM posts order by lower(title) asc').fetchall()
     conn.close()
     if feeds is None:
         abort(404)
@@ -41,7 +49,7 @@ def get_feeds():
 
 def get_feed(post_feed):
     conn = get_db_connection()
-    post = conn.execute('SELECT * FROM posts WHERE feed = ?', (post_feed,)).fetchall()
+    post = conn.execute('SELECT * FROM posts WHERE feed = ? order by lower(title) asc', (post_feed,)).fetchall()
     conn.close()
     if post is None:
         abort(404)
@@ -64,13 +72,14 @@ app.config['SECRET_KEY'] = 'your secret key'
 @app.route('/')
 def index():
     feeds = get_feeds()
-    return render_template('index.html', feeds=feeds)
+    posts = get_posts()
+    return render_template('index.html', feeds=feeds, posts=posts)
 
 
 @app.route('/<string:post_feed>')
 def posts(post_feed):
     posts = get_feed(post_feed)
-    return render_template('feed.html', posts=posts)
+    return render_template('feed.html', posts=posts, feed=post_feed)
 
 
 @app.route('/<string:post_feed>/<int:post_id>')

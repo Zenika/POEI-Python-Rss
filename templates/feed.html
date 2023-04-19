@@ -2,6 +2,8 @@
 
 {% block content %}
     <a href="{{ url_for('index')}}"><- Go back</a>
+
+    <h1>{{ feed|safe }}</h1>
     {% for post in posts %}
         <a href="{{ url_for('post', post_feed=post['feed'], post_id=post['id']) }}">
             <h2>{{ post['title']|safe }}</h2>
