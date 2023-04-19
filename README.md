@@ -35,11 +35,20 @@ Db is initialized with values retrieved from an RSS feed url.<br>
   We can now have multiple rss feed in init_db.<br>Post content in html is now interpreted as html (not just a string).<br>
 
 - 17/04/2023 :<br>
-  Rss feed URLs are now read from a `RssFeeds` file.<br>Flask run will ask user if they want to generate the database.db.<br>Add a new page `feed`.
+  Rss feed URLs are now read from a `RssFeeds` file.<br>Flask run will ask user if they want to generate the database.db.<br>Add a new page `feed`.<br>
+
+- 19/04/23 :<br>
+  Ordered feed and post by name.<br>Feed Filter by name.<br>
 
 ## Usage
 
 Make sure you have `python` and therefore `pip` installed.<br>
+
+Download all the python packages required.<br>You can do it from the requirements.txt file with `pip`:
+```sh
+pip install -r requirements.txt --use-pep517 --user
+```
+The --use-pep517 is required by sgmllib (a dependency of feedparser) and the --user is required by flask.<br>
 
 Run the flask web application with:
 ```sh
