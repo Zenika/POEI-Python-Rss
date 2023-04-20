@@ -1,4 +1,5 @@
 feedparser~=6.0.10
 Flask~=2.2.3
 connexion~=2.14.2
+swagger-ui-bundle~=0.0.9
 Werkzeug~=2.2.3
