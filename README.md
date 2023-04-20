@@ -13,7 +13,7 @@
 
 - 03/04/2023 :<br>
 First iteration of the project.
-Installation of the "Feedparser" lib and creation of a python script that retrieves some information from a rss feed link.<br>
+Installation of the "Feedparser" lib and creation of a python script that retrieves some information from an rss feed link.<br>
 
 - 07/04/2023 :<br>
 Add some information retrieved by the python script.
@@ -32,13 +32,16 @@ Db is initialized with values retrieved from an RSS feed url.<br>
   init_db.py is now executed when flask run.<br>
 
 - 14/04/2023 :<br>
-  We can now have multiple rss feed in init_db.<br>Post content in html is now interpreted as html (not just a string).<br>
+  We can now have multiple rss feeds in init_db.<br>Post content in html is now interpreted as html (not just a string).<br>
 
 - 17/04/2023 :<br>
   Rss feed URLs are now read from a `RssFeeds` file.<br>Flask run will ask user if they want to generate the database.db.<br>Add a new page `feed`.<br>
 
 - 19/04/23 :<br>
   Ordered feed and post by name.<br>Feed Filter by name.<br>
+
+- 20/04/23 :<br>
+  Testing swagger interface.<br>
 
 ## Usage
 
