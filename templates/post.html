@@ -1,10 +1,11 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <a href="{{ url_for('posts', post_feed=post['feed']) }}"><- Go back </a>
-    <a href="{{ url_for('posts', post_feed=post['feed']) }}"><- Go back</a>
-  <h2>{% block title %} {{ post['title']|safe }} {% endblock %}</h2>
-  <span>{{ post['date'] }}</span>
-  <a href="{{ post['link'] }}">{{ post['link'] }}</a>
-  <p>{{ post['content']|safe}}</p>
+    <a href="{{ url_for('home') }}"><- Go back to home page</a>
+    <br>
+    <a href="{{ url_for('posts', post_feed=post['feed']) }}"><- Go back to feed</a>
+    <h2>{% block title %} {{ post['title']|safe }} {% endblock %}</h2>
+    <span>{{ post['date'] }}</span>
+    <a href="{{ post['link'] }}">{{ post['link'] }}</a>
+    <p>{{ post['content']|safe}}</p>
 {% endblock %}

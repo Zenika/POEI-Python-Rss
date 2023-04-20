@@ -66,14 +66,13 @@ def get_post(post_id):
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'your secret key'
 
 
 @app.route('/')
-def index():
+def home():
     feeds = get_feeds()
     posts = get_posts()
-    return render_template('index.html', feeds=feeds, posts=posts)
+    return render_template('home.html', feeds=feeds, posts=posts)
 
 
 @app.route('/<string:post_feed>')
@@ -102,6 +101,6 @@ def create():
                          (title, content))
             conn.commit()
             conn.close()
-            return redirect(url_for('index'))
+            return redirect(url_for('home'))
 
     return render_template('create.html')
