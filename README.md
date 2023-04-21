@@ -43,6 +43,9 @@ Db is initialized with values retrieved from an RSS feed url.<br>
 - 20/04/23 :<br>
   Testing swagger interface.<br>
 
+- 21/04/23 :<br>
+  Adapting test swagger interface to rss feed.<br>Missing information from some feeds causes problems for swagger<br>api/version_1 just a flask app that display hom page<br>api/version_2 swagger test app that can retrieve some informations (people) on http://localhost:8080/api/ui/ <br>api/version_3 try to retrieve Rss feed infos like we retrieved people infos in version_2
+
 ## Usage
 
 Make sure you have `python` and therefore `pip` installed.<br>
@@ -52,6 +55,11 @@ Download all the python packages required.<br>You can do it from the requirement
 pip install -r requirements.txt --use-pep517 --user
 ```
 The --use-pep517 is required by sgmllib (a dependency of feedparser) and the --user is required by flask.<br>
+
+Tell Flask witch python app you want to use :
+```sh
+export FLASK_APP=app.py
+```
 
 Run the flask web application with:
 ```sh
