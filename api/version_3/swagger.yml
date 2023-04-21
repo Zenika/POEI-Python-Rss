@@ -1,0 +1,38 @@
+swagger: "2.0"
+info:
+  description: Ceci est le fichier swagger correspondant à nôtre API
+  version: "1.0.0"
+  title: Swagger pour API ReST
+consumes:
+  - application/json
+produces:
+  - application/json
+
+basePath: /api
+
+# Chemins supportés
+paths:
+  /people:
+    get:
+      operationId: people.read
+      tags:
+        - People
+      summary: Structure de données posts sous-jacente
+      description: Lire la liste des posts
+      responses:
+        200:
+          description: Succès dans la lecture des données
+          schema:
+            type: array
+            items:
+              properties:
+                feed:
+                  type: string
+                title:
+                  type: string
+                date:
+                  type: string
+                link:
+                  type: string
+                content:
+                  type: string

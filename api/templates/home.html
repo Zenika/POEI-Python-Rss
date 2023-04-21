@@ -1,12 +1,28 @@
+{% extends 'base.html' %}
 
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>Homepage</title>
-    </head>
-    <body>
-        <h2>
-            Home
-        </h2>
-    </body>
-</html>
+{% block content %}
+    <h1>{% block title %} POEI-Python-RSS {% endblock %}</h1>
+
+    <select id="feedName" onchange="filterFeed()">
+        <option value="">--Filter by feed--</option>
+        {% for feed in feeds %}
+            <option value={{ feed['feed'] }}>{{ feed['feed']|safe }}</option>
+        {% endfor %}
+    </select>
+
+    {% for post in posts %}
+        <a href="{{ url_for('post', post_feed=post['feed'], post_id=post['id']) }}">
+            <h2>{{ post['title']|safe }}</h2>
+        </a>
+        <hr>
+    {% endfor %}
+
+    <script>
+        function filterFeed() {
+            var e = document.getElementById("feedName");
+            var text = e.options[e.selectedIndex].text;
+            console.log(text)
+            document.location.href='/'+text
+        }
+    </script>
+{% endblock %}
