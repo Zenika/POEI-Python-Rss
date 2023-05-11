@@ -41,7 +41,6 @@ def get_feeds():
     conn.close()
     if feeds is None:
         abort(404)
-    print(feeds)
     return feeds
 
 def get_all_posts():

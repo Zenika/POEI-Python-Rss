@@ -1,0 +1,1 @@
+curl -s localhost/feeds/post/"$1" | jq .

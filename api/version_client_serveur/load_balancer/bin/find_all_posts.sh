@@ -1,0 +1,1 @@
+curl -s localhost/posts | jq .

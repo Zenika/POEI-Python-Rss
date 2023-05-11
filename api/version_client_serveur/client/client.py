@@ -4,7 +4,7 @@ from flask import Flask, render_template, request, url_for, flash, redirect
 from werkzeug.exceptions import abort
 from urllib.parse import quote
 
-server_url = 'http://localhost:5000'
+server_url = 'http://localhost:80'
 
 def get(path):
     response = requests.get(f"{server_url}{path}")
@@ -16,12 +16,10 @@ def get(path):
 
 def get_feeds():
     feeds = get(f"/feeds") 
-    print(feeds)
     return feeds
 
 def get_posts():
     posts = get(f"/posts") 
-    print(posts)
     return posts
 
 def get_feed(post_feed):
